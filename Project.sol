@@ -14,6 +14,10 @@ contract Project {
         uint32 amount;
     }
 
+    constructor(uint32 _deadline) {
+        deadline = _deadline;
+    }
+
     function getBalance() public view returns(uint) {
         return address(this).balance;
     }
